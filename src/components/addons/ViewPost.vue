@@ -29,7 +29,7 @@ export default {
   methods: {
     fetchPosts()
     {
-      axios.get('http://localhost:3000/post')
+      axios.get('https://blogpostvue.herokuapp.com/post')
       .then(result => {
         this.posts = result.data;
         var i = 0;
@@ -64,7 +64,7 @@ export default {
           break;
         }
       console.log(deletePostObject);
-      axios.delete('http://localhost:3000/post', {
+      axios.delete('https://blogpostvue.herokuapp.com/post', {
         data: deletePostObject
       })
       .then(status => {

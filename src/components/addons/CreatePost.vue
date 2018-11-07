@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     createPost() {
-      axios.post('http://localhost:3000/post', {
+      axios.post('https://blogpostvue.herokuapp.com/post', {
         name: this.name,
         subject: this.subject,
         message: this.message
